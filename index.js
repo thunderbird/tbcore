@@ -29,7 +29,7 @@ const synonyms = {
   "nthomas": "nthomas@mozilla.com",
   "philip.chee": "philip.chee@gmail.com",
   "Philip Chee": "philip.chee@gmail.org",
-  "Frank-Rainer Grahl frgrahl@gmx.net": "frgrahl@gmx.net:",
+  "Frank-Rainer Grahl frgrahl@gmx.net": "frgrahl@gmx.net",
   "Neil Rashbrook": "neil@parkwaycc.co.uk",
   "ehsan.akhgari@gmail.com": "ehsan@mozilla.com",
   "gavin@gavinsharp.com": "gavin@mozilla.com",
@@ -41,8 +41,6 @@ const synonyms = {
   "Jorg K and R Kent James": "rkent@caspia.com",
   "aceman": "acelists@atlas.sk",
   "cykesiopka@hotmail.com": "cykesiopka.bmo@gmail.com",
-  "frgrahl@gmx.net:": "frgrahl@gmx.net",
-
 
 }
 
@@ -130,7 +128,8 @@ for (let email of emails) {
   let tbCount = 0;
   let mailDirs = summedDirs[email];
   for (let mailDir in mailDirs) {
-    if (mailDir in nottb)
+
+    if (nottb.includes(mailDir))
       continue;
     tbCount += mailDirs[mailDir];
   }
