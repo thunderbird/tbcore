@@ -1,0 +1,11 @@
+{
+  "name": "tbcore",
+  "version": "1.0.0",
+  "description": "Process hg output to list Thunderbird core developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "R Kent James <rkent@caspia.com>",
+  "license": "ISC"
+}
